@@ -1,0 +1,15 @@
+{
+    "url": "https://cad.onshape.com/documents/41654e89e61a392d020b728c/w/d555ceec170d351622b789de/e/4c9a04a707c36ac7ad2ca0f8",
+    "output_format": "urdf",
+    "merge_stls": true,
+    "simplify_stls": "all",
+    "max_stl_size": 2,
+    "use_scads": true,
+    "no_collision_meshes": true,
+    "joint_properties": {
+        "default": {
+            "max_effort": 10,
+            "max_velocity": 6
+        }
+    }
+}
