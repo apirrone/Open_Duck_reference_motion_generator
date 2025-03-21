@@ -22,15 +22,17 @@ class PlacoWalkEngine:
         knee_limits: list = None,
     ) -> None:
         model_filename = os.path.join(asset_path, model_filename)
-        self.asset_path = asset_path
+        self.asset_path = asset_path.removesuffix("/")
         self.model_filename = model_filename
         self.ignore_feet_contact = ignore_feet_contact
-
-        robot_type = asset_path.split("/")[-1]
+        robot_type = self.asset_path.split("/")[-1]
         if robot_type in ["open_duck_mini", "go_bdx"]:
             knee_limits = knee_limits or [-0.2, -0.01]
-        else:
+        elif robot_type in ["open_duck_mini_v2"]:
             knee_limits = knee_limits or [0.2, 0.01]
+        else:
+            knee_limits = knee_limits or [-2, 2]
+
 
         # Loading the robot
         self.robot = placo.HumanoidRobot(model_filename)
@@ -58,8 +60,10 @@ class PlacoWalkEngine:
             self.tasks.trunk_mode = self.parameters.trunk_mode
         self.tasks.com_x = 0.0
         self.tasks.initialize_tasks(self.solver, self.robot)
-        self.tasks.left_foot_task.orientation().mask.set_axises("yz", "local")
-        self.tasks.right_foot_task.orientation().mask.set_axises("yz", "local")
+
+        if robot_type != "sigmaban2019":
+            self.tasks.left_foot_task.orientation().mask.set_axises("yz", "local")
+            self.tasks.right_foot_task.orientation().mask.set_axises("yz", "local")
         # tasks.trunk_orientation_task.configure("trunk_orientation", "soft", 1e-4)
         # tasks.left_foot_task.orientation().configure("left_foot_orientation", "soft", 1e-6)
         # tasks.right_foot_task.orientation().configure("right_foot_orientation", "soft", 1e-6)
