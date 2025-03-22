@@ -60,7 +60,7 @@ parser.add_argument("-l", "--length", type=int, default=10)
 parser.add_argument("-m", "--meshcat_viz", action="store_true", default=False)
 parser.add_argument(
     "--duck",
-    choices=["go_bdx", "open_duck_mini", "open_duck_mini_v2"],
+    choices=["go_bdx", "open_duck_mini", "open_duck_mini_v2", "sigmaban2019"],
     help="Duck type",
     required=True,
 )
