@@ -62,6 +62,8 @@ def fit_ref_motion(file):
         "nb_steps_in_period": nb_steps_in_period,
         "startend_double_support_ratio": startend_double_support_ratio,
     }
+    print(frame_offsets)
+    exit()
 
     return ret_data
 

@@ -14,9 +14,9 @@ parser.add_argument(
 parser.add_argument("-k", action="store_true", default=False)
 args = parser.parse_args()
 
-COMMANDS_RANGE_X = [-0.1, 0.15]
+COMMANDS_RANGE_X = [-0.5, 0.5]
 COMMANDS_RANGE_Y = [-0.2, 0.2]
-COMMANDS_RANGE_THETA = [-0.5, 0.5]
+COMMANDS_RANGE_THETA = [-1.0, 1.0]
 
 
 class ReferenceMotion:
@@ -227,7 +227,7 @@ if __name__ == "__main__":
         if args.k:
             handle_keyboard()
         i += 1
-        i = i % 450
+        i = i % 1000
         ref = RM.get_closest_reference_motion(*commands, i)
 
         root_position = ref[RM.slices["root_pos"]]
@@ -236,8 +236,8 @@ if __name__ == "__main__":
         root_pose[:3, 3] = root_position
         root_pose[:3, :3] = root_orientation_mat
 
-        left_toe_pos = np.array(ref[RM.slices["left_toe_pos"]])
-        right_toe_pos = np.array(ref[RM.slices["right_toe_pos"]])
+        left_toe_pos = np.array(ref[RM.slices["left_toe_pos"]]) + np.array(root_position)
+        right_toe_pos = np.array(ref[RM.slices["right_toe_pos"]]) + np.array(root_position)
 
         left_toe_pose[:3, 3] = left_toe_pos
         right_toe_pose[:3, 3] = right_toe_pos

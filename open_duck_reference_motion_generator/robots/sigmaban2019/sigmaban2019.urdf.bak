@@ -1,0 +1,1179 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- OnShape https://cad.onshape.com/documents/41654e89e61a392d020b728c/w/d555ceec170d351622b789de/e/4c9a04a707c36ac7ad2ca0f8 -->
+<robot name="sigmaban2019_urdf">
+    <!-- Link tronc -->
+    <link name="tronc">
+        <inertial>
+            <origin xyz="0.000280866 0.00434829 0.0901186" rpy="0 0 0"/>
+            <mass value="1.49258"/>
+            <inertia ixx="0.00652487" ixy="5.5354e-06" ixz="1.87301e-05" iyy="0.00716127" iyz="-0.000110706" izz="0.00434153"/>
+        </inertial>
+        <!-- Part tronc -->
+        <collision>
+            <origin xyz="7.29592e-15 0.071323 0.1899" rpy="1.5708 1.5708 0"/>
+            <geometry>
+                <box size="0.01 0.13 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.06 0.071323 0.1649" rpy="1.5708 1.5708 0"/>
+            <geometry>
+                <box size="0.04 0.01 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.06 0.071323 0.1649" rpy="1.5708 1.5708 0"/>
+            <geometry>
+                <box size="0.04 0.01 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.05 -0.017127 0.1609" rpy="-3.14159 -1.5708 0"/>
+            <geometry>
+                <box size="0.029 0.05 0.04"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.046375 -0.026254 0.02" rpy="3.14159 1.48609e-23 -3.14159"/>
+            <geometry>
+                <box size="0.029 0.05 0.04"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="2.55419e-14 -0.022127 0.1623" rpy="1.12133e-14 -2.28241e-15 -3.14159"/>
+            <geometry>
+                <box size="0.029 0.05 0.04"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="1.52206e-14 -0.019127 0.1354" rpy="3.14159 1.48609e-23 -3.14159"/>
+            <geometry>
+                <box size="0.13 0.08 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.0625 0.037873 0.0909" rpy="-3.14159 -1.48609e-23 8.63328e-14"/>
+            <geometry>
+                <cylinder length="0.086" radius="0.004"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.0625 0.037873 0.0909" rpy="1.80079e-24 -1.48609e-23 8.63328e-14"/>
+            <geometry>
+                <cylinder length="0.086" radius="0.004"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.031 -0.054127 0.0909" rpy="1.80079e-24 -1.48609e-23 8.63328e-14"/>
+            <geometry>
+                <cylinder length="0.086" radius="0.004"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="1.27053e-14 0.010373 0.0469" rpy="1.78736e-24 -1.48609e-23 8.63328e-14"/>
+            <geometry>
+                <box size="0.13 0.08 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="2.07505e-14 0.031123 0.00149996" rpy="-1.88432e-18 -5.37577e-17 8.62212e-14"/>
+            <geometry>
+                <box size="0.13 0.044 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.03 -0.007877 0.00149996" rpy="-1.88432e-18 -5.37577e-17 8.62212e-14"/>
+            <geometry>
+                <box size="0.01 0.035 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.03 -0.007877 0.00149996" rpy="-1.88432e-18 -5.37577e-17 8.62212e-14"/>
+            <geometry>
+                <box size="0.01 0.035 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.046375 -0.026254 0.02" rpy="3.14159 1.48613e-23 -3.14159"/>
+            <geometry>
+                <box size="0.029 0.05 0.04"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="1.24036e-14 0.035873 0.10615" rpy="1.5708 1.48609e-23 -3.14159"/>
+            <geometry>
+                <box size="0.11 0.11 0.033"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="8.35454e-15 0.059373 0.1384" rpy="-3.14159 1.79405e-24 -1.5708"/>
+            <geometry>
+                <box size="0.01 0.135 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.031 -0.054127 0.0914" rpy="1.80079e-24 -1.48609e-23 8.63328e-14"/>
+            <geometry>
+                <cylinder length="0.086" radius="0.004"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.0505868 -0.017127 0.1609" rpy="3.14159 1.5708 0"/>
+            <geometry>
+                <box size="0.029 0.05 0.04"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.000280866 0.00434829 0.0901186" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://assets/merged/tronc_visual.stl"/>
+            </geometry>
+            <material name="tronc_material">
+                <color rgba="0.330193 0.345021 0.337569 1.0"/>
+            </material>
+        </visual>
+    </link>
+    <!-- Frame trunk (dummy link + fixed joint) -->
+    <link name="trunk">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="1e-9"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+    </link>
+    <joint name="trunk_frame" type="fixed">
+        <origin xyz="2.43796e-14 -0.011254 -0.0435" rpy="-5.7251e-17 -1.88432e-18 -1.5708"/>
+        <parent link="tronc"/>
+        <child link="trunk"/>
+        <axis xyz="0 0 0"/>
+    </joint>
+    <!-- Frame head_base (dummy link + fixed joint) -->
+    <link name="head_base">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="1e-9"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+    </link>
+    <joint name="head_base_frame" type="fixed">
+        <origin xyz="2.67832e-14 -0.037127 0.1858" rpy="2.77556e-17 1.38778e-17 -1.5708"/>
+        <parent link="tronc"/>
+        <child link="head_base"/>
+        <axis xyz="0 0 0"/>
+    </joint>
+    <!-- Link u_block -->
+    <link name="u_block">
+        <inertial>
+            <origin xyz="-0.00607049 -2.12569e-09 -0.0117654" rpy="0 0 0"/>
+            <mass value="0.0354404"/>
+            <inertia ixx="8.64707e-06" ixy="-2.51587e-12" ixz="-7.76843e-07" iyy="2.30163e-05" iyz="-7.59825e-13" izz="2.00312e-05"/>
+        </inertial>
+        <!-- Part u_block -->
+        <collision>
+            <origin xyz="-0.00494 -5.29611e-19 -0.003" rpy="3.14159 -3.5853e-41 3.12137e-42"/>
+            <geometry>
+                <box size="0.05 0.03 0.006"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.03144 -3.75877e-17 -0.023" rpy="-1.5708 9.35682e-17 -1.5708"/>
+            <geometry>
+                <box size="0.025 0.044 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.0219 3.99975e-17 -0.023" rpy="-1.5708 3.9526e-17 1.5708"/>
+            <geometry>
+                <box size="0.027 0.042 0.003"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.00607049 -2.12569e-09 -0.0117654" rpy="-1.79413e-24 1.64794e-16 -1.5708"/>
+            <geometry>
+                <mesh filename="package://assets/merged/u_block_visual.stl"/>
+            </geometry>
+            <material name="u_block_material">
+                <color rgba="0.301961 0.301961 0.301961 1.0"/>
+            </material>
+        </visual>
+    </link>
+    <!-- Link mx106_block_mir -->
+    <link name="mx106_block_mir">
+        <inertial>
+            <origin xyz="0.000708644 -0.0149916 0.004996" rpy="0 0 0"/>
+            <mass value="0.293468"/>
+            <inertia ixx="0.000351924" ixy="-3.56118e-06" ixz="-3.81447e-06" iyy="0.000307324" iyz="-2.48449e-05" izz="0.000137869"/>
+        </inertial>
+        <!-- Part mx106_block_mir -->
+        <collision>
+            <origin xyz="-1.724e-14 -0.015 0.0234" rpy="2.89425e-13 -1.5708 0"/>
+            <geometry>
+                <box size="0.03 0.055 0.04"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="9.75782e-19 -0.015 -0.026" rpy="-1.68105e-40 3.81268e-29 -1.37931e-29"/>
+            <geometry>
+                <box size="0.03 0.055 0.04"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.000708644 -0.0149916 0.004996" rpy="-1.5708 -5.40601e-13 2.89492e-13"/>
+            <geometry>
+                <mesh filename="package://assets/merged/mx106_block_mir_visual.stl"/>
+            </geometry>
+            <material name="mx106_block_mir_material">
+                <color rgba="0.491153 0.482215 0.458379 1.0"/>
+            </material>
+        </visual>
+    </link>
+    <!-- Link right_knee -->
+    <link name="right_knee">
+        <inertial>
+            <origin xyz="0.000188839 -0.092394 0.0273957" rpy="0 0 0"/>
+            <mass value="0.202752"/>
+            <inertia ixx="0.000442788" ixy="-7.67062e-08" ixz="-2.55348e-08" iyy="9.69639e-05" iyz="1.17863e-05" izz="0.000385387"/>
+        </inertial>
+        <!-- Part right_knee -->
+        <collision>
+            <origin xyz="2.53138e-14 -0.125 0.026" rpy="-3.14159 -1.81887e-16 4.5397e-13"/>
+            <geometry>
+                <box size="0.03 0.055 0.04"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="3.70906e-16 -0.0825 0.026" rpy="-1.5708 1.5708 0"/>
+            <geometry>
+                <box size="0.047 0.0275 0.006"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="1.02782e-16 -0.0395 0.0535" rpy="4.996e-16 -2.77556e-16 1.32533e-15"/>
+            <geometry>
+                <box size="0.04 0.09 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-6.77626e-19 -0.0395 -0.0015" rpy="-3.64812e-34 3.52046e-29 -2.74809e-32"/>
+            <geometry>
+                <box size="0.04 0.09 0.003"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.000188839 -0.092394 0.0273957" rpy="-1.5708 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://assets/merged/right_knee_visual.stl"/>
+            </geometry>
+            <material name="right_knee_material">
+                <color rgba="0.388865 0.38476 0.373811 1.0"/>
+            </material>
+        </visual>
+    </link>
+    <!-- Link tibia -->
+    <link name="tibia">
+        <inertial>
+            <origin xyz="-0.00342169 0.0646068 0.026" rpy="0 0 0"/>
+            <mass value="0.0888437"/>
+            <inertia ixx="0.000245247" ixy="-6.12719e-06" ixz="1.44286e-11" iyy="7.67255e-05" iyz="3.8066e-11" izz="0.000187463"/>
+        </inertial>
+        <!-- Part tibia -->
+        <collision>
+            <origin xyz="8.67362e-19 0.067 -0.0015" rpy="3.14159 -2.39826e-29 0"/>
+            <geometry>
+                <box size="0.03 0.165 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="6.93889e-18 0.067 0.0535" rpy="-3.14159 -3.60822e-16 1.11022e-16"/>
+            <geometry>
+                <box size="0.03 0.165 0.003"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.00342169 0.0646068 0.026" rpy="1.5708 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://assets/merged/tibia_visual.stl"/>
+            </geometry>
+            <material name="tibia_material">
+                <color rgba="0.301961 0.301961 0.301961 1.0"/>
+            </material>
+        </visual>
+    </link>
+    <!-- Link mx106_block -->
+    <link name="mx106_block">
+        <inertial>
+            <origin xyz="0.0184063 0.0149916 0.027049" rpy="0 0 0"/>
+            <mass value="0.293468"/>
+            <inertia ixx="0.000137693" ixy="-2.48419e-05" ixz="5.67913e-06" iyy="0.000307124" iyz="3.25323e-06" izz="0.0003519"/>
+        </inertial>
+        <!-- Part mx106_block -->
+        <collision>
+            <origin xyz="0 0.015 0.026" rpy="-3.14159 1.04974e-29 5.28557e-30"/>
+            <geometry>
+                <box size="0.03 0.055 0.04"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.0494 0.015 0.026" rpy="-3.14159 1.5708 0"/>
+            <geometry>
+                <box size="0.03 0.055 0.04"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.0184063 0.0149916 0.027049" rpy="-1.5708 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://assets/merged/mx106_block_visual.stl"/>
+            </geometry>
+            <material name="mx106_block_material">
+                <color rgba="0.491153 0.482215 0.458379 1.0"/>
+            </material>
+        </visual>
+    </link>
+    <!-- Link right_foot_cleat_back_left -->
+    <link name="right_foot_cleat_back_left">
+        <inertial>
+            <origin xyz="-0.00468466 -0.0365779 0.0511529" rpy="0 0 0"/>
+            <mass value="0.239067"/>
+            <inertia ixx="0.000628183" ixy="-1.62629e-06" ixz="4.22638e-06" iyy="0.000791509" iyz="-2.53047e-05" izz="0.000201629"/>
+        </inertial>
+        <!-- Part right_foot_cleat_back_left -->
+        <collision>
+            <origin xyz="-0.0055 -0.0275 0.12247" rpy="3.14159 0.785398 -1.5708"/>
+            <geometry>
+                <box size="0.01 0.09 0.01"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.0055 -0.0415 0.03867" rpy="1.5708 -2.34865e-17 3.14159"/>
+            <geometry>
+                <box size="0.09 0.155 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="1.56125e-17 -0.037 0.02834" rpy="-1.5708 1.5708 0"/>
+            <geometry>
+                <box size="0.05 0.03 0.006"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="6.93889e-17 -0.017 0.05484" rpy="-3.14159 -2.42855e-17 3.14159"/>
+            <geometry>
+                <box size="0.025 0.044 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="6.93889e-18 -0.017 0.0015" rpy="-1.36882e-30 1.1038e-29 2.36811e-31"/>
+            <geometry>
+                <box size="0.027 0.042 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.0325 -0.05 0.10947" rpy="1.5708 0.555221 -2.37021e-15"/>
+            <geometry>
+                <cylinder length="0.02" radius="0.008"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.0435 -0.05 0.10947" rpy="-1.5708 0.199727 3.14159"/>
+            <geometry>
+                <cylinder length="0.02" radius="0.008"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.0325 -0.05 -0.03213" rpy="1.5708 -0.311457 -2.11626e-15"/>
+            <geometry>
+                <cylinder length="0.02" radius="0.008"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.0435 -0.05 -0.03213" rpy="-1.5708 0.199727 3.14159"/>
+            <geometry>
+                <cylinder length="0.02" radius="0.008"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.00468466 -0.0365779 0.0511529" rpy="-1.5708 -5.42073e-13 -4.08558e-15"/>
+            <geometry>
+                <mesh filename="package://assets/merged/right_foot_cleat_back_left_visual.stl"/>
+            </geometry>
+            <material name="right_foot_cleat_back_left_material">
+                <color rgba="0.3811 0.375396 0.359887 1.0"/>
+            </material>
+        </visual>
+    </link>
+    <!-- Frame right_foot (dummy link + fixed joint) -->
+    <link name="right_foot">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="1e-9"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+    </link>
+    <joint name="right_foot_frame" type="fixed">
+        <origin xyz="-5.55112e-17 -0.06 0.02317" rpy="-1.5708 -1.5708 0"/>
+        <parent link="right_foot_cleat_back_left"/>
+        <child link="right_foot"/>
+        <axis xyz="0 0 0"/>
+    </joint>
+    <!-- Joint from mx106_block to right_foot_cleat_back_left -->
+    <joint name="right_ankle_roll" type="revolute">
+        <origin xyz="0.0234 4.55191e-15 0.026" rpy="-7.80481e-16 -1.5708 0"/>
+        <parent link="mx106_block"/>
+        <child link="right_foot_cleat_back_left"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="6" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Joint from tibia to mx106_block -->
+    <joint name="right_ankle_pitch" type="revolute">
+        <origin xyz="1.38778e-17 0.14 0" rpy="-1.83187e-15 2.77556e-16 -3.14159"/>
+        <parent link="tibia"/>
+        <child link="mx106_block"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="6" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Joint from right_knee to tibia -->
+    <joint name="right_knee" type="revolute">
+        <origin xyz="3.21514e-14 -0.14 3.60822e-16" rpy="-7.13043e-16 -3.36029e-16 -3.14159"/>
+        <parent link="right_knee"/>
+        <child link="tibia"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="6" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Joint from mx106_block_mir to right_knee -->
+    <joint name="right_hip_pitch" type="revolute">
+        <origin xyz="-0.026 -1.04222e-14 0.0234" rpy="-2.8919e-13 1.5708 0"/>
+        <parent link="mx106_block_mir"/>
+        <child link="right_knee"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="6" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Joint from u_block to mx106_block_mir -->
+    <joint name="right_hip_roll" type="revolute">
+        <origin xyz="0.0234 3.46945e-17 -0.04" rpy="1.5708 2.89657e-13 -1.5708"/>
+        <parent link="u_block"/>
+        <child link="mx106_block_mir"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="6" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Joint from tronc to u_block -->
+    <joint name="right_hip_yaw" type="revolute">
+        <origin xyz="-0.046375 -0.011254 -0.00350004" rpy="-1.64794e-16 -1.79404e-24 1.5708"/>
+        <parent link="tronc"/>
+        <child link="u_block"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="6" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Link u_block_2 -->
+    <link name="u_block_2">
+        <inertial>
+            <origin xyz="-0.00607049 -2.12569e-09 -0.0117654" rpy="0 0 0"/>
+            <mass value="0.0354404"/>
+            <inertia ixx="8.64707e-06" ixy="-2.51587e-12" ixz="-7.76843e-07" iyy="2.30163e-05" iyz="-7.59825e-13" izz="2.00312e-05"/>
+        </inertial>
+        <!-- Part u_block_2 -->
+        <collision>
+            <origin xyz="-0.00494 -1.95522e-19 -0.003" rpy="-3.14159 3.18039e-32 6.12454e-30"/>
+            <geometry>
+                <box size="0.05 0.03 0.006"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.03144 5.61338e-18 -0.023" rpy="-1.5708 -6.60998e-17 -1.5708"/>
+            <geometry>
+                <box size="0.025 0.044 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.0219 6.35324e-18 -0.023" rpy="-1.5708 -1.91186e-17 1.5708"/>
+            <geometry>
+                <box size="0.027 0.042 0.003"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.00607049 -2.12569e-09 -0.0117654" rpy="-3.13509e-16 -2.2682e-16 -1.5708"/>
+            <geometry>
+                <mesh filename="package://assets/merged/u_block_2_visual.stl"/>
+            </geometry>
+            <material name="u_block_2_material">
+                <color rgba="0.301961 0.301961 0.301961 1.0"/>
+            </material>
+        </visual>
+    </link>
+    <!-- Link mx106_block_2 -->
+    <link name="mx106_block_2">
+        <inertial>
+            <origin xyz="-0.00104898 -0.0149916 0.00499375" rpy="0 0 0"/>
+            <mass value="0.293468"/>
+            <inertia ixx="0.0003519" ixy="3.25323e-06" ixz="5.67913e-06" iyy="0.000307124" iyz="-2.48419e-05" izz="0.000137693"/>
+        </inertial>
+        <!-- Part mx106_block_2 -->
+        <collision>
+            <origin xyz="-1.72911e-14 -0.015 0.0234" rpy="-2.88049e-13 1.5708 0"/>
+            <geometry>
+                <box size="0.03 0.055 0.04"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-6.28837e-18 -0.015 -0.026" rpy="-3.62267e-32 -6.45673e-30 -2.33386e-29"/>
+            <geometry>
+                <box size="0.03 0.055 0.04"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.00104898 -0.0149916 0.00499375" rpy="-1.5708 -8.6382e-14 2.88507e-13"/>
+            <geometry>
+                <mesh filename="package://assets/merged/mx106_block_2_visual.stl"/>
+            </geometry>
+            <material name="mx106_block_2_material">
+                <color rgba="0.491153 0.482215 0.458379 1.0"/>
+            </material>
+        </visual>
+    </link>
+    <!-- Link left_knee -->
+    <link name="left_knee">
+        <inertial>
+            <origin xyz="-0.000185582 0.092394 -0.0271483" rpy="0 0 0"/>
+            <mass value="0.202752"/>
+            <inertia ixx="0.000442915" ixy="-1.01212e-07" ixz="1.22181e-07" iyy="9.70917e-05" iyz="1.18508e-05" izz="0.000385387"/>
+        </inertial>
+        <!-- Part left_knee -->
+        <collision>
+            <origin xyz="-2.48284e-14 0.125 -0.026" rpy="7.17623e-16 -2.98198e-16 4.53605e-13"/>
+            <geometry>
+                <box size="0.03 0.055 0.04"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="6.18808e-17 0.0825 -0.026" rpy="1.5708 -1.5708 0"/>
+            <geometry>
+                <box size="0.047 0.0275 0.006"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="4.30157e-17 0.0395 -0.0535" rpy="-3.14159 -3.59516e-17 -5.14922e-16"/>
+            <geometry>
+                <box size="0.04 0.09 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="1.51788e-18 0.0395 0.0015" rpy="-3.14159 -2.13064e-30 -1.27058e-31"/>
+            <geometry>
+                <box size="0.04 0.09 0.003"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.000185582 0.092394 -0.0271483" rpy="1.5708 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://assets/merged/left_knee_visual.stl"/>
+            </geometry>
+            <material name="left_knee_material">
+                <color rgba="0.388865 0.38476 0.373811 1.0"/>
+            </material>
+        </visual>
+    </link>
+    <!-- Link tibia_2 -->
+    <link name="tibia_2">
+        <inertial>
+            <origin xyz="-0.00342169 0.0646068 -0.026" rpy="0 0 0"/>
+            <mass value="0.0888437"/>
+            <inertia ixx="0.000245247" ixy="-6.12719e-06" ixz="1.44286e-11" iyy="7.67255e-05" iyz="3.8066e-11" izz="0.000187463"/>
+        </inertial>
+        <!-- Part tibia_2 -->
+        <collision>
+            <origin xyz="2.23346e-16 0.067 -0.0535" rpy="3.14159 -1.29393e-16 3.04496e-16"/>
+            <geometry>
+                <box size="0.03 0.165 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="1.30104e-18 0.067 0.0015" rpy="3.14159 6.77291e-30 -4.57972e-31"/>
+            <geometry>
+                <box size="0.03 0.165 0.003"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.00342169 0.0646068 -0.026" rpy="1.5708 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://assets/merged/tibia_2_visual.stl"/>
+            </geometry>
+            <material name="tibia_2_material">
+                <color rgba="0.301961 0.301961 0.301961 1.0"/>
+            </material>
+        </visual>
+    </link>
+    <!-- Link mx106_block_mir_2 -->
+    <link name="mx106_block_mir_2">
+        <inertial>
+            <origin xyz="-0.018404 -0.0149916 -0.0267086" rpy="0 0 0"/>
+            <mass value="0.293468"/>
+            <inertia ixx="0.000137869" ixy="-2.48449e-05" ixz="3.81447e-06" iyy="0.000307324" iyz="3.56118e-06" izz="0.000351924"/>
+        </inertial>
+        <!-- Part mx106_block_mir_2 -->
+        <collision>
+            <origin xyz="3.46945e-18 -0.015 -0.026" rpy="0 1.07112e-29 -5.04871e-29"/>
+            <geometry>
+                <box size="0.03 0.055 0.04"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.0494 -0.015 -0.026" rpy="-4.54893e-13 1.5708 0"/>
+            <geometry>
+                <box size="0.03 0.055 0.04"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.018404 -0.0149916 -0.0267086" rpy="1.5708 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://assets/merged/mx106_block_mir_2_visual.stl"/>
+            </geometry>
+            <material name="mx106_block_mir_2_material">
+                <color rgba="0.491153 0.482215 0.458379 1.0"/>
+            </material>
+        </visual>
+    </link>
+    <!-- Link left_foot_cleat_front_right -->
+    <link name="left_foot_cleat_front_right">
+        <inertial>
+            <origin xyz="0.00468466 -0.0365779 0.0511529" rpy="0 0 0"/>
+            <mass value="0.239067"/>
+            <inertia ixx="0.000628183" ixy="1.62629e-06" ixz="-4.22638e-06" iyy="0.000791509" iyz="-2.53047e-05" izz="0.000201629"/>
+        </inertial>
+        <!-- Part left_foot_cleat_front_right -->
+        <collision>
+            <origin xyz="0.0055 -0.0275 0.12247" rpy="-3.14159 0.785398 -1.5708"/>
+            <geometry>
+                <box size="0.01 0.09 0.01"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.0055 -0.0415 0.03867" rpy="1.5708 7.48198e-16 -3.14159"/>
+            <geometry>
+                <box size="0.09 0.155 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-1.64799e-17 -0.037 0.02834" rpy="-1.5708 1.5708 0"/>
+            <geometry>
+                <box size="0.05 0.03 0.006"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-8.76035e-17 -0.017 0.05484" rpy="-3.14159 -3.72098e-16 -3.14159"/>
+            <geometry>
+                <box size="0.025 0.044 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="2.60209e-18 -0.017 0.0015" rpy="-1.0102e-28 4.49356e-30 2.31749e-31"/>
+            <geometry>
+                <box size="0.027 0.042 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.0435 -0.05 0.10947" rpy="-1.5708 0.480536 3.14159"/>
+            <geometry>
+                <cylinder length="0.02" radius="0.008"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.0325 -0.05 0.10947" rpy="-1.5708 0.480536 3.14159"/>
+            <geometry>
+                <cylinder length="0.02" radius="0.008"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.0435 -0.05 -0.03213" rpy="-1.5708 0.480536 3.14159"/>
+            <geometry>
+                <cylinder length="0.02" radius="0.008"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.0325 -0.05 -0.03213" rpy="-1.5708 0.480536 -3.14159"/>
+            <geometry>
+                <cylinder length="0.02" radius="0.008"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.00468466 -0.0365779 0.0511529" rpy="-1.5708 -8.5963e-14 6.06172e-15"/>
+            <geometry>
+                <mesh filename="package://assets/merged/left_foot_cleat_front_right_visual.stl"/>
+            </geometry>
+            <material name="left_foot_cleat_front_right_material">
+                <color rgba="0.3811 0.375396 0.359887 1.0"/>
+            </material>
+        </visual>
+    </link>
+    <!-- Frame left_foot (dummy link + fixed joint) -->
+    <link name="left_foot">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="1e-9"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+    </link>
+    <joint name="left_foot_frame" type="fixed">
+        <origin xyz="-2.498e-16 -0.06 0.02317" rpy="-1.5708 -1.5708 0"/>
+        <parent link="left_foot_cleat_front_right"/>
+        <child link="left_foot"/>
+        <axis xyz="0 0 0"/>
+    </joint>
+    <!-- Joint from mx106_block_mir_2 to left_foot_cleat_front_right -->
+    <joint name="left_ankle_roll" type="revolute">
+        <origin xyz="-0.0234 -7.71605e-15 -0.026" rpy="-3.14159 -1.5708 0"/>
+        <parent link="mx106_block_mir_2"/>
+        <child link="left_foot_cleat_front_right"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="6" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Joint from tibia_2 to mx106_block_mir_2 -->
+    <joint name="left_ankle_pitch" type="revolute">
+        <origin xyz="1.56125e-17 0.14 0" rpy="-1.04225e-15 -1.02268e-16 -3.09772e-16"/>
+        <parent link="tibia_2"/>
+        <child link="mx106_block_mir_2"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="6" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Joint from left_knee to tibia_2 -->
+    <joint name="left_knee" type="revolute">
+        <origin xyz="-3.16396e-14 0.14 1.9984e-14" rpy="1.64154e-15 -1.88306e-16 4.53915e-13"/>
+        <parent link="left_knee"/>
+        <child link="tibia_2"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="6" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Joint from mx106_block_2 to left_knee -->
+    <joint name="left_hip_pitch" type="revolute">
+        <origin xyz="0.026 1.24623e-14 0.0234" rpy="-3.14159 -1.5708 0"/>
+        <parent link="mx106_block_2"/>
+        <child link="left_knee"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="6" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Joint from u_block_2 to mx106_block_2 -->
+    <joint name="left_hip_roll" type="revolute">
+        <origin xyz="0.0234 6.93889e-18 -0.04" rpy="1.5708 2.8828e-13 -1.5708"/>
+        <parent link="u_block_2"/>
+        <child link="mx106_block_2"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="6" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Joint from tronc to u_block_2 -->
+    <joint name="left_hip_yaw" type="revolute">
+        <origin xyz="0.046375 -0.011254 -0.00349999" rpy="2.2682e-16 -3.13509e-16 1.5708"/>
+        <parent link="tronc"/>
+        <child link="u_block_2"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="6" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Link u_shoulder -->
+    <link name="u_shoulder">
+        <inertial>
+            <origin xyz="-9.73075e-18 0.00486029 0.0167829" rpy="0 0 0"/>
+            <mass value="0.042898"/>
+            <inertia ixx="1.57991e-05" ixy="1.55549e-20" ixz="-9.89815e-21" iyy="2.84983e-05" iyz="-3.76137e-06" izz="2.50037e-05"/>
+        </inertial>
+        <!-- Part u_shoulder -->
+        <visual>
+            <origin xyz="-1.38778e-17 0.00486029 0.0167829" rpy="1.5708 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://assets/merged/u_shoulder_visual.stl"/>
+            </geometry>
+            <material name="u_shoulder_material">
+                <color rgba="0.301961 0.301961 0.301961 1.0"/>
+            </material>
+        </visual>
+    </link>
+    <!-- Link left_humerus -->
+    <link name="left_humerus">
+        <inertial>
+            <origin xyz="-0.00126251 -0.0436099 -0.0264304" rpy="0 0 0"/>
+            <mass value="0.160913"/>
+            <inertia ixx="0.000298866" ixy="-1.14436e-05" ixz="2.70833e-06" iyy="5.22003e-05" iyz="-2.91954e-06" izz="0.000291858"/>
+        </inertial>
+        <!-- Part left_humerus -->
+        <collision>
+            <origin xyz="-1.00432e-14 -0.092 -0.0391736" rpy="3.45444e-16 -1.5708 0"/>
+            <geometry>
+                <box size="0.003 0.07 0.03"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-1.00274e-14 -0.054 -0.0231736" rpy="3.45444e-16 -1.5708 0"/>
+            <geometry>
+                <box size="0.03 0.003 0.03"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-6.93889e-18 -0.015 -0.0235" rpy="-3.69779e-32 5.7326e-32 1.84671e-33"/>
+            <geometry>
+                <box size="0.029 0.05 0.04"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.00126251 -0.0436099 -0.0264304" rpy="-1.5708 -8.66163e-14 5.82834e-17"/>
+            <geometry>
+                <mesh filename="package://assets/merged/left_humerus_visual.stl"/>
+            </geometry>
+            <material name="left_humerus_material">
+                <color rgba="0.413637 0.406669 0.387489 1.0"/>
+            </material>
+        </visual>
+    </link>
+    <!-- Link left_radius -->
+    <link name="left_radius">
+        <inertial>
+            <origin xyz="0.00327966 -0.0430868 -0.0251932" rpy="0 0 0"/>
+            <mass value="0.15357"/>
+            <inertia ixx="0.000332027" ixy="2.83043e-05" ixz="-7.76862e-07" iyy="4.10668e-05" iyz="9.63669e-06" izz="0.000323367"/>
+        </inertial>
+        <!-- Part left_radius -->
+        <collision>
+            <origin xyz="0.018 -0.0985 -0.0235" rpy="-3.14159 -1.63297e-15 3.14159"/>
+            <geometry>
+                <box size="0.003 0.085 0.03"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.0075 -0.141 -0.0235" rpy="-3.14159 -1.63297e-15 3.14159"/>
+            <geometry>
+                <cylinder length="0.03" radius="0.012"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="4.33681e-18 -0.015 -0.0235" rpy="2.98462e-31 -6.96352e-30 4.98955e-29"/>
+            <geometry>
+                <box size="0.029 0.05 0.04"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.00327966 -0.0430868 -0.0251932" rpy="-1.5708 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://assets/merged/left_radius_visual.stl"/>
+            </geometry>
+            <material name="left_radius_material">
+                <color rgba="0.371948 0.366528 0.352073 1.0"/>
+            </material>
+        </visual>
+    </link>
+    <!-- Joint from left_humerus to left_radius -->
+    <joint name="left_elbow" type="revolute">
+        <origin xyz="0.0235 -0.112 -0.00167365" rpy="4.539e-13 1.5708 0"/>
+        <parent link="left_humerus"/>
+        <child link="left_radius"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="6" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Joint from u_shoulder to left_humerus -->
+    <joint name="left_shoulder_roll" type="revolute">
+        <origin xyz="0.0225 0.03 0.035" rpy="3.14159 -1.5708 0"/>
+        <parent link="u_shoulder"/>
+        <child link="left_humerus"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="6" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Joint from tronc to u_shoulder -->
+    <joint name="left_shoulder_pitch" type="revolute">
+        <origin xyz="0.0735 -0.032127 0.1609" rpy="-1.5708 -5.08852e-16 -1.5708"/>
+        <parent link="tronc"/>
+        <child link="u_shoulder"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="6" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Link u_shoulder_2 -->
+    <link name="u_shoulder_2">
+        <inertial>
+            <origin xyz="1.72211e-18 -0.00486029 -0.0167829" rpy="0 0 0"/>
+            <mass value="0.042898"/>
+            <inertia ixx="1.57991e-05" ixy="-1.20122e-20" ixz="1.17155e-20" iyy="2.84983e-05" iyz="-3.76137e-06" izz="2.50037e-05"/>
+        </inertial>
+        <!-- Part u_shoulder_2 -->
+        <visual>
+            <origin xyz="0 -0.00486029 -0.0167829" rpy="-1.5708 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://assets/merged/u_shoulder_2_visual.stl"/>
+            </geometry>
+            <material name="u_shoulder_2_material">
+                <color rgba="0.301961 0.301961 0.301961 1.0"/>
+            </material>
+        </visual>
+    </link>
+    <!-- Link right_humerus -->
+    <link name="right_humerus">
+        <inertial>
+            <origin xyz="0.00126251 -0.0436099 -0.0271147" rpy="0 0 0"/>
+            <mass value="0.160913"/>
+            <inertia ixx="0.000298586" ixy="1.14436e-05" ixz="-2.52758e-06" iyy="5.19202e-05" iyz="-5.286e-06" izz="0.000291858"/>
+        </inertial>
+        <!-- Part right_humerus -->
+        <collision>
+            <origin xyz="-1.12445e-14 -0.092 -0.04" rpy="-4.54407e-13 -1.5708 0"/>
+            <geometry>
+                <box size="0.003 0.07 0.03"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="6.03185e-15 -0.054 -0.024" rpy="-4.54407e-13 -1.5708 0"/>
+            <geometry>
+                <box size="0.03 0.003 0.03"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="4.33681e-19 -0.015 -0.0235" rpy="-6.21528e-33 -3.83316e-31 7.07151e-34"/>
+            <geometry>
+                <box size="0.029 0.05 0.04"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.00126251 -0.0436099 -0.0271147" rpy="-1.5708 -8.54838e-14 -1.8792e-17"/>
+            <geometry>
+                <mesh filename="package://assets/merged/right_humerus_visual.stl"/>
+            </geometry>
+            <material name="right_humerus_material">
+                <color rgba="0.413637 0.406669 0.387489 1.0"/>
+            </material>
+        </visual>
+    </link>
+    <!-- Link right_radius -->
+    <link name="right_radius">
+        <inertial>
+            <origin xyz="-0.00327966 0.0430868 0.0248666" rpy="0 0 0"/>
+            <mass value="0.15357"/>
+            <inertia ixx="0.00033218" ixy="2.83043e-05" ixz="-7.64256e-07" iyy="4.12202e-05" iyz="9.80244e-06" izz="0.000323367"/>
+        </inertial>
+        <!-- Part right_radius -->
+        <collision>
+            <origin xyz="-0.018 0.0985 0.0235" rpy="-3.14159 -1.82781e-15 -2.61184e-16"/>
+            <geometry>
+                <box size="0.003 0.085 0.03"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.0075 0.141 0.0235" rpy="-3.14159 -1.82781e-15 -2.61184e-16"/>
+            <geometry>
+                <cylinder length="0.03" radius="0.012"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-8.23994e-18 0.015 0.0235" rpy="3.14159 -2.44997e-30 2.05357e-33"/>
+            <geometry>
+                <box size="0.029 0.05 0.04"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.00327966 0.0430868 0.0248666" rpy="1.5708 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://assets/merged/right_radius_visual.stl"/>
+            </geometry>
+            <material name="right_radius_material">
+                <color rgba="0.371948 0.366528 0.352073 1.0"/>
+            </material>
+        </visual>
+    </link>
+    <!-- Joint from right_humerus to right_radius -->
+    <joint name="right_elbow" type="revolute">
+        <origin xyz="-0.0235 -0.112 -0.0025" rpy="3.14159 -1.5708 0"/>
+        <parent link="right_humerus"/>
+        <child link="right_radius"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="6" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Joint from u_shoulder_2 to right_humerus -->
+    <joint name="right_shoulder_roll" type="revolute">
+        <origin xyz="-0.0225 -0.03 -0.035" rpy="-5.78241e-16 -1.5708 0"/>
+        <parent link="u_shoulder_2"/>
+        <child link="right_humerus"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="6" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Joint from tronc to u_shoulder_2 -->
+    <joint name="right_shoulder_pitch" type="revolute">
+        <origin xyz="-0.0740868 -0.032127 0.1609" rpy="1.5708 -6.38201e-16 1.5708"/>
+        <parent link="tronc"/>
+        <child link="u_shoulder_2"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="6" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Link u_neck -->
+    <link name="u_neck">
+        <inertial>
+            <origin xyz="-2.20609e-17 -1.31112e-16 0.0128918" rpy="0 0 0"/>
+            <mass value="0.0362092"/>
+            <inertia ixx="9.33353e-06" ixy="4.25093e-12" ixz="-2.63852e-20" iyy="2.23897e-05" iyz="-1.44604e-19" izz="1.88135e-05"/>
+        </inertial>
+        <!-- Part u_neck -->
+        <collision>
+            <origin xyz="-0.025 -2.71223e-16 0.023" rpy="1.5708 -3.29254e-16 1.5708"/>
+            <geometry>
+                <box size="0.025 0.044 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.025 -2.49194e-16 0.023" rpy="1.5708 7.60838e-16 -1.5708"/>
+            <geometry>
+                <box size="0.025 0.044 0.003"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-2.35581e-17 -1.249e-16 0.0128918" rpy="1.12133e-14 -2.28241e-15 3.14159"/>
+            <geometry>
+                <mesh filename="package://assets/merged/u_neck_visual.stl"/>
+            </geometry>
+            <material name="u_neck_material">
+                <color rgba="0.301961 0.301961 0.301961 1.0"/>
+            </material>
+        </visual>
+    </link>
+    <!-- Link head -->
+    <link name="head">
+        <inertial>
+            <origin xyz="0.00154487 -0.0388417 -0.0248279" rpy="0 0 0"/>
+            <mass value="0.174917"/>
+            <inertia ixx="0.000196166" ixy="8.95351e-06" ixz="-3.22141e-07" iyy="7.55235e-05" iyz="8.82273e-06" izz="0.000202779"/>
+        </inertial>
+        <!-- Part head -->
+        <collision>
+            <origin xyz="-0.0375 -0.0698 -0.042" rpy="-3.14159 1.16573e-15 1.27614e-13"/>
+            <geometry>
+                <box size="0.008 0.05 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-6.45664e-15 -0.0698 -0.042" rpy="-3.14159 1.16573e-15 1.27614e-13"/>
+            <geometry>
+                <box size="0.008 0.05 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.0375 -0.0698 -0.042" rpy="-3.14159 1.16573e-15 1.27614e-13"/>
+            <geometry>
+                <box size="0.008 0.05 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-9.39743e-15 -0.0468 -0.042" rpy="-3.14159 1.16573e-15 1.27614e-13"/>
+            <geometry>
+                <box size="0.083 0.008 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-6.45664e-15 -0.0698 -0.042" rpy="-3.14159 1.16573e-15 1.27614e-13"/>
+            <geometry>
+                <box size="0.083 0.008 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-3.50891e-15 -0.0928 -0.042" rpy="-3.14159 1.16573e-15 1.27614e-13"/>
+            <geometry>
+                <box size="0.083 0.008 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.00496822 -0.06905 -0.0235" rpy="1.5708 -1.5708 0"/>
+            <geometry>
+                <box size="0.03 0.03 0.028"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.0375 -0.0698 -0.005" rpy="-3.14159 9.99201e-16 1.22132e-13"/>
+            <geometry>
+                <box size="0.008 0.05 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-6.61363e-15 -0.0698 -0.005" rpy="-3.14159 9.99201e-16 1.22132e-13"/>
+            <geometry>
+                <box size="0.008 0.05 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.0375 -0.0698 -0.005" rpy="-3.14159 9.99201e-16 1.22132e-13"/>
+            <geometry>
+                <box size="0.008 0.05 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-9.42952e-15 -0.0468 -0.005" rpy="-3.14159 9.99201e-16 1.22132e-13"/>
+            <geometry>
+                <box size="0.083 0.008 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-6.61363e-15 -0.0698 -0.005" rpy="-3.14159 9.99201e-16 1.22132e-13"/>
+            <geometry>
+                <box size="0.083 0.008 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-3.79774e-15 -0.0928 -0.005" rpy="-3.14159 9.99201e-16 1.22132e-13"/>
+            <geometry>
+                <box size="0.083 0.008 0.003"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="1.30104e-18 -0.015 -0.0235" rpy="4.00673e-32 2.86713e-30 -1.80961e-30"/>
+            <geometry>
+                <box size="0.029 0.05 0.04"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.00154487 -0.0388417 -0.0248279" rpy="1.5708 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://assets/merged/head_visual.stl"/>
+            </geometry>
+            <material name="head_material">
+                <color rgba="0.437668 0.429692 0.406184 1.0"/>
+            </material>
+        </visual>
+    </link>
+    <!-- Frame camera (dummy link + fixed joint) -->
+    <link name="camera">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="1e-9"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+    </link>
+    <joint name="camera_frame" type="fixed">
+        <origin xyz="0.024933 -0.06905 -0.0235" rpy="-1.24392e-13 1.5708 0"/>
+        <parent link="head"/>
+        <child link="camera"/>
+        <axis xyz="0 0 0"/>
+    </joint>
+    <!-- Frame vive (dummy link + fixed joint) -->
+    <link name="vive">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="1e-9"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+    </link>
+    <joint name="vive_frame" type="fixed">
+        <origin xyz="-2.95597e-15 -0.0998 -0.0235" rpy="-1.5708 -1.16113e-15 -3.14159"/>
+        <parent link="head"/>
+        <child link="vive"/>
+        <axis xyz="0 0 0"/>
+    </joint>
+    <!-- Joint from u_neck to head -->
+    <joint name="head_pitch" type="revolute">
+        <origin xyz="-0.0235 -4.85723e-16 0.04" rpy="-1.5708 -7.60838e-16 1.5708"/>
+        <parent link="u_neck"/>
+        <child link="head"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="6" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Joint from tronc to u_neck -->
+    <joint name="head_yaw" type="revolute">
+        <origin xyz="2.67834e-14 -0.037127 0.1858" rpy="1.12133e-14 -2.28241e-15 -3.14159"/>
+        <parent link="tronc"/>
+        <child link="u_neck"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="6" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+</robot>

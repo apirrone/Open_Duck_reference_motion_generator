@@ -162,7 +162,7 @@ def main(args):
             str(i),
             "--output_dir",
             args.output_dir,
-            # "--meshcat_viz"
+            "--meshcat_viz"
         ]
         log_file = None if args.verbose else os.path.join(log_dir, f"{i}.log")
         commands.append((cmd, log_file))
