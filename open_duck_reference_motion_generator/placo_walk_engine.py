@@ -9,6 +9,7 @@ import os
 warnings.filterwarnings("ignore")
 
 DT = 0.01
+REPLAN_DT = 0.1
 REFINE = 10
 
 
@@ -105,7 +106,7 @@ class PlacoWalkEngine:
         )
 
         self.supports = placo.FootstepsPlanner.make_supports(
-            self.footsteps, True, self.parameters.has_double_support(), True
+            self.footsteps, 0.0, True, self.parameters.has_double_support(), True
         )
 
         # Creating the pattern generator and making an initial plan
@@ -138,7 +139,7 @@ class PlacoWalkEngine:
         params.double_support_ratio = data.get('double_support_ratio', params.double_support_ratio)
         params.startend_double_support_ratio = data.get('startend_double_support_ratio', params.startend_double_support_ratio)
         params.planned_timesteps = data.get('planned_timesteps', params.planned_timesteps)
-        params.replan_timesteps = data.get('replan_timesteps', params.replan_timesteps)
+        # params.replan_timesteps = data.get('replan_timesteps', params.replan_timesteps)
         params.walk_com_height = data.get('walk_com_height', params.walk_com_height)
         params.walk_foot_height = data.get('walk_foot_height', params.walk_foot_height)
         params.walk_trunk_pitch = np.deg2rad(data.get('walk_trunk_pitch', np.rad2deg(params.walk_trunk_pitch)))
@@ -185,7 +186,7 @@ class PlacoWalkEngine:
         )
 
         self.supports = placo.FootstepsPlanner.make_supports(
-            self.footsteps, True, self.parameters.has_double_support(), True
+            self.footsteps, 0.0, True, self.parameters.has_double_support(), True
         )
         self.trajectory = self.walk.plan(self.supports, self.robot.com_world(), 0.0)
 
@@ -266,15 +267,15 @@ class PlacoWalkEngine:
         # If enough time elapsed and we can replan, do the replanning
         if (
             self.t - self.last_replan
-            > self.parameters.replan_timesteps * self.parameters.dt()
+            > REPLAN_DT
             and self.walk.can_replan_supports(self.trajectory, self.t)
         ):
-            self.last_replan = self.t
-
             # Replanning footsteps from current trajectory
             self.supports = self.walk.replan_supports(
-                self.repetitive_footsteps_planner, self.trajectory, self.t
+                self.repetitive_footsteps_planner, self.trajectory, self.t, self.last_replan
             )
+
+            self.last_replan = self.t
 
             # Replanning CoM trajectory, yielding a new trajectory we can switch to
             self.trajectory = self.walk.replan(self.supports, self.trajectory, self.t)
